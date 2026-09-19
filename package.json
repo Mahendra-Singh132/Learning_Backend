@@ -1,0 +1,30 @@
+{
+  "name": "lecture_project",
+  "version": "1.0.0",
+  "description": "\"Made by Mahendra\"",
+  "keywords": [
+    "javascript",
+    "backend",
+    "chai"
+  ],
+  "license": "ISC",
+  "author": "Mahendra Singh Sisodiya",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon --dns-result-order=ipv4first -r dotenv/config --experimental-json-modules src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.0",
+    "express": "^5.2.1",
+    "mongoose": "^9.10.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.8"
+  }
+}
