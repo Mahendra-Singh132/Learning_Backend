@@ -60,7 +60,7 @@ connectDB()
 //});
 
 // const PORT = process.env.PORT || 8000;
-// const MONGODB_URI=process.env.MONGODB_URI || `mongodb+srv://mahendra9617718092_db_user:zp0pjw4yclbzKbab@clusterone.csawku3.mongodb.net`;
+// const MONGODB_URI=process.env.MONGODB_URI;
 // import mongoose from 'mongoose'
 // import { DB_NAME } from './constants.js';
 // import express from 'express'
