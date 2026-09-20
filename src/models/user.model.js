@@ -46,11 +46,14 @@ const userSchema= new Schema({
     }
 },{timestamps:true})
 
-userSchema.pre("save", async function(next) {           // this is middleware Next() need
+userSchema.pre("save", async function() {           // this is middleware Next() need
 
     if(this.isModified("password"))
-    this.password= await bcrypt.hash(this.password,10);
-    next();
+    {
+        this.password= await bcrypt.hash(this.password,10);
+
+    }
+    
 
 })
 
